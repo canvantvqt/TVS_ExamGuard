@@ -15,7 +15,7 @@ VIDEO_CHOICES = ('V15_8s_alert_v2_web.mp4','V15_8s_alert_web.mp4')
 VIDEO = next((ROOT / name for name in VIDEO_CHOICES if (ROOT / name).is_file()), None)
 EVIDENCE = ROOT / 'evidence'
 
-st.set_page_config(page_title='TVS | ExamGuard AI — Demo 1.1',page_icon='🛡️',layout='wide',initial_sidebar_state='collapsed')
+st.set_page_config(page_title='TVS | ExamGuard AI — Demo 1.1',page_icon='📹',layout='wide',initial_sidebar_state='collapsed')
 st.markdown('''<style>
 .stApp{background:#f3f7fc;color:#172d49}.block-container{max-width:1470px;padding-top:1.3rem}
 [data-testid="stHeader"]{background:transparent}
@@ -26,7 +26,7 @@ st.markdown('''<style>
 .note{border:1px solid #cbd9e9;background:white;border-radius:12px;padding:12px 16px;color:#435b76;font-size:13px;margin:8px 0 15px}
 div[data-testid="stTabs"] button{font-weight:700}
 </style>''',unsafe_allow_html=True)
-st.markdown('''<div class="brand"><div class="logo">🛡</div><div><h1>TVS - ExamGuard AI — Demo 1.1</h1><p>HỆ THỐNG HỖ TRỢ GIÁM SÁT PHÒNG THI · VIDEO MÔ PHỎNG · YOLO ONNX · PHÂN TÍCH H.14–H.15</p></div></div>''',unsafe_allow_html=True)
+st.markdown('''<div class="brand"><div class="logo">📹</div><div><h1>TVS – ExamGuard AI | Demo 1.1</h1><p>THỊ GIÁC MÁY TÍNH · PHÂN TÍCH VIDEO · HỖ TRỢ CẢNH BÁO GIÁM THỊ</p></div></div>''',unsafe_allow_html=True)
 
 if not CSV.exists():
     st.error('Thiếu H15_event_audit.csv.');st.stop()
@@ -98,7 +98,7 @@ v.autoplay=false;v.pause();v.currentTime=0;sync();
         components.html(page,height=840,scrolling=True)
     else:
         st.error('Chưa có video triển khai. Chép V15_8s_alert_v2_web.mp4 từ máy thầy vào cùng thư mục app.py, sau đó tải lại trang.')
-    st.markdown('<div class="note">PHẠM VI DEMO: Video mô phỏng, khung YOLO và cảnh báo G06 được xử lý trước. Không phải nhận diện rời ghế trực tiếp, xác nhận gian lận hoặc giám sát thời gian thực.</div>',unsafe_allow_html=True)
+    st.markdown('<div class="note"><b>GIỚI THIỆU DEMO:</b> Phiên bản 1.1 minh họa quy trình nhận diện người bằng YOLO, phân tích biến động hình ảnh và hỗ trợ cảnh báo tại vị trí cần kiểm tra, thông qua video mô phỏng đã xử lý.</div>',unsafe_allow_html=True)
 
 # The research tab is kept separate so demo counters never imply that all three signals are departures.
 with tab_research:
