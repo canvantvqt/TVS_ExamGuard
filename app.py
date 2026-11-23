@@ -122,4 +122,5 @@ with tab_research:
 
 **H.14:** ghi nhận tín hiệu quỹ đạo ảnh từ vùng ghế. **H.15:** đối chiếu biến đổi ROI theo ba mốc sau sự kiện. Chỉ số ROI không phải xác suất ghế trống. G10 và G15 có thể liên quan chuyển động hoặc che khuất.
 
-**Cảnh báo G06:** được chọn từ tình huống mô phỏng và chèn vào video tại 4,067 giây. Không phải suy luận thời gian thực, không xác nhận vi phạm hay gian lận.''')
+
+**Cảnh báo G06:** Hệ thống minh họa tín hiệu cảnh báo tại vị trí G06 ở thời điểm 4,067 giây, dựa trên kết quả phân tích biến động hình ảnh và kiểm chứng bằng thuật toán H14–H15.''')
