@@ -26,7 +26,7 @@ st.markdown('''<style>
 .note{border:1px solid #cbd9e9;background:white;border-radius:12px;padding:12px 16px;color:#435b76;font-size:13px;margin:8px 0 15px}
 div[data-testid="stTabs"] button{font-weight:700}
 </style>''',unsafe_allow_html=True)
-st.markdown('''<div class="brand"><div class="logo">📹</div><div><h1>TVS – ExamGuard AI | Demo 1.1</h1><p>THỊ GIÁC MÁY TÍNH · PHÂN TÍCH VIDEO · CẢNH BÁO HỖ TRỢ BÁO GIÁM THỊ GIÁM SÁT PHÒNG THI (PHÒNG HỌC) </p></div></div>''',unsafe_allow_html=True)
+st.markdown('''<div class="brand"><div class="logo">📹</div><div><h1>TVS – ExamGuard AI | Demo 1.1</h1><p>THỊ GIÁC MÁY TÍNH · PHÂN TÍCH VIDEO · CẢNH BÁO HỖ TRỢ GIÁM THỊ GIÁM SÁT PHÒNG THI (PHÒNG HỌC) QUA HỆ THỐNG CAMERA CỦA TRƯỜNG HỌC </p></div></div>''',unsafe_allow_html=True)
 
 if not CSV.exists():
     st.error('Thiếu H15_event_audit.csv.');st.stop()
